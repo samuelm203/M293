@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline JavaScript Example</title>
+</head>
+<body>
+
+<script>
+    let numberSeries = Number(prompt("Gib eine Zahl ein: "));
+    let numberAmount = Number(prompt("Wie viele Vielfache möchtest du ausgeben? "));
+
+    for (let i = 1; i <= numberAmount; i++) {
+        printNumbers(numberSeries * i);
+    }
+
+    function printNumbers(numbers) {
+        console.log(numbers);
+    }
+</script>
+
+<h1>Inline JavaScript Vorlage</h1>
+<p>Das ist eine einfache Vorlage für Inline-JavaScript.</p>
+<p>Damit du die Ausgabe der Konsole einsehen kannst, öffne die Entwicklertools,
+    indem du mit der rechten Maustaste auf diese Seite klickst, und dann auf Untersuchen klickst.</p>
+</body>
+</html>

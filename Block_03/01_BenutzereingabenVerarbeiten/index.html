@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline JavaScript Example</title>
+</head>
+<body>
+
+<script>
+    let numberOne = Number(prompt("Gib eine erste Zahl ein: "));
+    let numberTwo = Number(prompt("Gib eine zweite Zahl ein: "));
+
+    add(numberOne, numberTwo);
+    subtract(numberOne, numberTwo);
+    multiply(numberOne, numberTwo);
+    divide(numberOne, numberTwo);
+
+
+    function add(numberOne, numberTwo) {
+        let sum = parseInt(numberOne) + parseInt(numberTwo);
+        console.log(sum);
+    }
+
+    function subtract(numberOne, numberTwo) {
+        let difference = parseInt(numberOne) - parseInt(numberTwo);
+        console.log(difference);
+    }
+
+    function multiply(numberOne, numberTwo) {
+        let product = parseInt(numberOne) * parseInt(numberTwo);
+        console.log(product);
+    }
+
+    function divide(numberOne, numberTwo) {
+        if (numberTwo === 0) {
+            console.log("Fehler: Division durch 0 nicht möglich!");
+            return;
+        }
+
+        let quotient = parseInt(numberOne) / parseInt(numberTwo);
+        console.log(quotient);
+    }
+</script>
+
+<h1>Inline JavaScript Vorlage</h1>
+<p>Das ist eine einfache Vorlage für Inline-JavaScript.</p>
+<p>Damit du die Ausgabe der Konsole einsehen kannst, öffne die Entwicklertools,
+    indem du mit der rechten Maustaste auf diese Seite klickst, und dann auf Untersuchen klickst.</p>
+</body>
+</html>
